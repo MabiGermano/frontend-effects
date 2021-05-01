@@ -1,0 +1,29 @@
+body {
+    background-color: #eeeff0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div {
+    width: 45%;
+    height: 10rem;
+    background-color: #305fb6;
+    margin: 1rem;
+
+
+}
+.slide-in {
+    transform: translateY(150px);
+    animation: slide-in 0.8s ease forwards;
+}
+
+.slide-in:nth-child {
+    animation-duration: 0.6s;
+}
+
+@keyframes slide-in {
+    to {
+        transform: translateY(0);
+    }
+}
